@@ -14,7 +14,7 @@
 import random
 
 # создание списка
-n = int(input('Введите количество элементов :   '))
+n = int(input('Введите количество элементов: '))
 run = range(-n, n, 2)
 numbers = list(run)
 print(numbers)
@@ -28,13 +28,11 @@ for i in range (number):
     f.write('\n')
 f.close()
 
-# суммирование элементов, соответсвующих позициям в файле.
 multiplicator = 1
-#f = open('text.txt','r')
 #for i in  range (1, number+1):
 with open ("4.1.txt", "r") as f:
     for i in f :
         print(i)
         multiplicator = multiplicator * numbers[int(i)]
 #f.close()
-print(f' произведение чисел под заданными в файле номерами  = {multiplicator}')
+print(f'Произведение чисел под заданными в файле номерами = {multiplicator}')
