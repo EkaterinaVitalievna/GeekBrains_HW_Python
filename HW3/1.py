@@ -9,6 +9,18 @@ for i in range(1, len(list), 2):
     sum_odd_position += list[i]
 print(f'{list} - сумма элементов на нечетных позициях равна: {sum_odd_position}')
 
+users_nums = [
+    45, # 0
+    67, # 1
+    43, # 2
+    78, # 3
+    3,  # 4
+    5,  # 5
+]
+
+print(f'Sum => {sum(users_nums[1::2])}')
+
+
 exit()
 control_list = [int(input('введите элемент списка: '))
 for _ in range(int(input('Введите кол-во элементов: ')))]
